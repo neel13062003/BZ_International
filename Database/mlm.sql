@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2023 at 06:03 AM
+-- Generation Time: Nov 16, 2023 at 08:12 AM
 -- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -43,7 +43,7 @@ CREATE TABLE `members` (
 
 INSERT INTO `members` (`id`, `name`, `upline`, `amount`, `fd`, `date`, `date1`) VALUES
 (34, 'dimplesoni', 'kjs', 600000, 100000, '2023-03-01 21:25:32', '2023-04-14 12:09:56'),
-(35, 'nishasoni', 'dimplesoni', 225000, 800000, '2023-03-01 21:25:51', '2023-10-24 10:48:12'),
+(35, 'nishasoni', 'dimplesoni', 225000, 1300000, '2023-03-01 21:25:51', '2023-11-16 12:37:48'),
 (37, 'tirth', 'dimplesoni', 10000, 0, '2023-03-01 21:30:55', NULL),
 (38, 'anitasoni', 'dimplesoni', 10000, 0, '2023-03-01 21:31:38', NULL),
 (39, 'kkthakor', 'dimplesoni', 25000, 0, '2023-03-01 21:31:58', NULL),
@@ -66,7 +66,7 @@ INSERT INTO `members` (`id`, `name`, `upline`, `amount`, `fd`, `date`, `date1`) 
 (74, 'jyotiben', 'dimplesoni', 100000, 0, '2023-09-28 12:22:18', NULL),
 (75, 'chandu', 'pravinamam', 100000, 0, '2023-10-06 11:50:00', NULL),
 (76, 'bhavanaben', 'nishasoni', 10000, 0, '2023-10-09 20:16:15', NULL),
-(78, 'mitul', 'nishasoni', 150000, 0, '2023-11-15 10:04:29', NULL);
+(78, 'mitul', 'vipulgohil', 150000, 0, '2023-11-15 10:04:29', NULL);
 
 -- --------------------------------------------------------
 
