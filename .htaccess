@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Redirect requests without .php extension to the corresponding PHP file
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# Allow access to files and directories that actually exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite URL with name parameter as query string
+RewriteRule ^commision$ commision.php [QSA,L]
