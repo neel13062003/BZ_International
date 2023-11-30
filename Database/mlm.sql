@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2023 at 08:12 AM
+-- Generation Time: Nov 30, 2023 at 07:10 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -50,7 +50,7 @@ INSERT INTO `members` (`id`, `name`, `upline`, `amount`, `fd`, `date`, `date1`) 
 (42, 'niketan', 'nishasoni ', 80000, 0, '2023-03-01 21:33:01', NULL),
 (43, 'sarika', 'nishasoni', 90000, 0, '2023-03-01 21:33:22', NULL),
 (44, 'ansuya', 'nishasoni', 750000, 0, '2023-03-01 21:33:42', NULL),
-(46, 'vipulgohil', 'nishasoni', 40000, 0, '2023-03-05 10:42:44', NULL),
+(46, 'vipulgohil', 'nishasoni', 50000, 0, '2023-03-05 10:42:44', NULL),
 (59, 'alpita', 'nishasoni', 27000, 0, '2023-04-08 12:34:24', NULL),
 (60, 'pinkybhatt', 'nishasoni', 20000, 0, '2023-04-13 18:50:39', NULL),
 (64, 'gayatri', 'dimplesoni', 150000, 0, '2023-04-15 14:02:37', NULL),
