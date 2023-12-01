@@ -17,7 +17,7 @@ a {
   font-weight: bold;
   color: #fff;
   border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
+  /* transition: background-color 0.3s ease-in-out; */
 }
  .button-container{
   color:white;
@@ -73,22 +73,22 @@ echo '
 
 <style>
     /* CSS Jump Animation */
-    @keyframes jump {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0); /* Start and end with no vertical movement */
-      }
-      40% {
-        transform: translateY(-30px); /* Jump up at 40% */
-      }
-      60% {
-        transform: translateY(-15px); /* Come back down at 60% */
-      }
-    }
+    // @keyframes jump {
+    //   0%, 20%, 50%, 80%, 100% {
+    //     transform: translateY(0); /* Start and end with no vertical movement */
+    //   }
+    //   40% {
+    //     transform: translateY(-30px); /* Jump up at 40% */
+    //   }
+    //   60% {
+    //     transform: translateY(-15px); /* Come back down at 60% */
+    //   }
+    // }
 
-    /* Apply animation to an element with the class -jumping-element */
-    .jumping-element {
-      animation: jump 1s ease-in-out infinite; /* Adjust duration and timing function as needed */
-    }
+    // /* Apply animation to an element with the class -jumping-element */
+    // .jumping-element {
+    //   animation: jump 1s ease-in-out infinite; /* Adjust duration and timing function as needed */
+    // }
   </style>    
 
 <body class="back">';
