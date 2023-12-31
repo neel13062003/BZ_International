@@ -116,7 +116,7 @@ echo '
                                     top: 15%;
                                     left: -22%;
                                     right:0%;
-                                    transform: translate(20%, 20%);" >
+                                    transform: translate(20%, 20%);">
           <a href="add" class="imp">Add Your Investment Team</a>
           <a href="amount" class="imp1">Add Amount</a>
           <a href="fd" class="imp">FD</a>

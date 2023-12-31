@@ -2,8 +2,6 @@
     .back{
       background-image: url('img/bi2.jfif');
        background-size: cover; 
-      /* background-size: 1000px 667px; */
-      /* background-size: 1100px 600px; */
       background-position: center center;
       background-repeat: no-repeat;
   }
@@ -41,11 +39,6 @@ echo '
   
   <!-- datatabels CSS -->
   <link rel="stylesheet" href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
- 
-
-
- 
-
 </head>
 
 <body class="back">';
@@ -54,22 +47,6 @@ echo '
     require "partials/nav.php";
  
     if($loggedin){
-      echo' 
-        
-      <!-- main content -->
-      <!----main class="container mt-5">
-        <div class="container" style="width:80%;">
-         
-          <div class="form-container">  
-          <h1 class="text-center" style="color:blue; font-family: Algerian, sans-serif;">All Members ID</h1>
-            <form action="show_search.php" method="post">
-                <td><input type="number" name="search" placeholder="Search" style="border-radius:10px;width:20%; margin:10px;"/><button type="submit" name="submit" class="btn btn-primary">Submit</button></td>
-            </form>
-            </div>
-        </div>
-        </main>
-        <div class="d-flex justify-content-center mt-5"---->';
-
         echo '<div class="container" style="background: aliceblue;width:60%;">
                     <div class="table-wrapper" style="margin:30px;" >
                         <div class="table-title" style="border-radius: 14px;background:black;">
@@ -109,35 +86,15 @@ echo '
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
         }
-
-        // Check if the search form has been submitted
-        //if (isset($_POST['submit'])) {
-            // Sanitize the search input
-            //$search_id = mysqli_real_escape_string($conn, $_POST['search']);
-
-            // Construct the SQL query to retrieve the member names and IDs
-            //$sql = "SELECT id, name FROM members WHERE id = '$search_id'";
-            
-            //Future Error Come Change here.    
             $sql = "SELECT id, name FROM members";  //change
-            //$sql = "SELECT users.id, members.name FROM users JOIN members ON users.username = members.name";
-            
             $result = mysqli_query($conn, $sql);
-
-            // Check if any results were returned
-            if (mysqli_num_rows($result) > 0) {
-                // Display the results in a table
-                //echo " <table class='table table-striped table-hover text-center' id='NoOrder1' style='font-size:15px;'  >";
-                // echo "<tr><th>ID</th><th>Name</th></tr>";
+            if (mysqli_num_rows($result) > 0) { 
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr><td>" . $row['id'] . "</td><td>" . $row['name'] . "</td></tr>";
                 }
-                //echo "</table>";
             } else {
                 echo "No results found.";
             }
-        //}
-        
 
 
     }else{
